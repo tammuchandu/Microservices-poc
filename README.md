@@ -75,6 +75,7 @@ mvn -pl order-service spring-boot:run
 Terminal 4 (start after the other services):
 
 ```powershell
+
 mvn -pl aggregator-service spring-boot:run
 ```
 

@@ -11,6 +11,12 @@ import org.springframework.web.server.ResponseStatusException;
 @RequestMapping("/api")
 public class AggregatorController {
     private final RestClient restClient;
+    /*The flow in your microservices project is:
+1. End User: Sends an HTTP request (Postman or frontend).
+2. Aggregator Controller: Receives the request.
+3. RestClient: Aggregator uses RestClient to send HTTP requests to the corresponding services.
+4. Corresponding Services: User Service, Product Service, or Order Service processes the request and returns data.
+5. Aggregator: Receives and combines the responses, then sends the final response to the end user. */
     private final String userServiceUrl;
     private final String productServiceUrl;
     private final String orderServiceUrl;
