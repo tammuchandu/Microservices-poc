@@ -181,4 +181,6 @@ TestRestTemplate → Sends real HTTP requests to your running test application.
 
 
 
-RestClient → Used by your application to communicate with other microservices. */
+RestClient → Used by your application to communicate with other microservices.
+
+In simple words, MockMvc behaves like Postman, but it sends simulated HTTP requests directly through Spring MVC's request-processing infrastructure.*/
